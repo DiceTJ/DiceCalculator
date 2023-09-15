@@ -137,5 +137,19 @@ namespace DiceCalculator
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void Calculate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataTable Calc = new DataTable();
+                var ans = Calc.Compute(Output.Text,"");
+                Output.Text = ans.ToString();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
