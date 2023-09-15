@@ -87,5 +87,25 @@ namespace DiceCalculator
         {
             Output.Text = "";
         }
+
+        private void Multi_Click(object sender, EventArgs e)
+        {
+            Output.Text += "*";
+        }
+
+        private void Div_Click(object sender, EventArgs e)
+        {
+            Output.Text += "/";
+        }
+
+        private void Sum_Click(object sender, EventArgs e)
+        {
+            Output.Text += "+";
+        }
+
+        private void Minus_Click(object sender, EventArgs e)
+        {
+            Output.Text += "-";
+        }
     }
 }
